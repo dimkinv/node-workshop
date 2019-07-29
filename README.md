@@ -17,9 +17,9 @@ http://[host]:[port]/api/v1/quotes?sources=<json,xml,image>&page=<number>&quotes
 * any number of `quotesPerPage` should be valid as an input _(except negative and zero values)_
 
 ## Quotes sources
-* json `https://dimkinv.github.io/node-workshop/json-source.json`
-* xml `https://dimkinv.github.io/node-workshop/xml-source.xml`
-* image `https://dimkinv.github.io/node-workshop/image-source.json`
+* [json](https://dimkinv.github.io/node-workshop/json-source.json) `https://dimkinv.github.io/node-workshop/json-source.json`
+* [xml](https://dimkinv.github.io/node-workshop/xml-source.xml) `https://dimkinv.github.io/node-workshop/xml-source.xml`
+* [image](https://dimkinv.github.io/node-workshop/image-source.json) `https://dimkinv.github.io/node-workshop/image-source.json`
 
 ## Addition workshop info
 ### Recommended libraries
