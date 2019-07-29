@@ -88,6 +88,13 @@ After placing package.json in the folder and running `npm i` you will be able to
 ## Recommended stack
 Following is the recommended stack for the project, you can however use any libraries, but, using the below will help you to be aligned with the solution provided in case you will want to look inside _(more on the solution below)_
 
+* expressjs
+* axios
+* jest (for tests)
+* xml2js
+
+_if you feel like you know nest.js, go ahead and write the solution with nest!_
+
 # Solution
 Inside the `solution` folder you are provided with fully working solution of the project. You are welcome to look inside to see and take parts of the code if you'd want. There is only one rule:
 
