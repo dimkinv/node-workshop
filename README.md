@@ -27,7 +27,7 @@ http://[host]:[port]/api/v1/quotes?sources=<json,xml,image>&page=<number>&quotes
 * xml2js - `npm i xml2js` XML parsing library to parse data form xml to json
 
 ### Parsing images to text OCR
-To parse images source you will need to use Google OCR service. Essentially the requirments is to send a POST request to `https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAGmuBXtzlggW-k8tFx57GdaYhE4KIfqJI` with the following format in the body:
+To parse images source you will need to use Google OCR service. Essentially the requirments is to send a POST request to `https://vision.googleapis.com/v1/images:annotate?key=<KEY_THAT_WILL_BE_PROVIDED_AT_WORKSHOP>` with the following format in the body:
 ```
 {
   'requests': [
