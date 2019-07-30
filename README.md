@@ -111,6 +111,10 @@ Inside the `solution` folder you are provided with fully working solution of the
 
 **DON'T copy/paste! Instead look, understand, and then write the code with your own hands. There is no learning in ctrl+c/ctrl+v**
 
+You can can find the repository with this file and the solution [here](https://github.com/dimkinv/node-workshop)
+
+To clone the project please run the following command in your teminal of choice: `git clone https://github.com/dimkinv/node-workshop.git`
+
 **_Note_** _This solution is opinionated, it includes specific solution design. It is by no means the only one. It is also by design omits things like logging, deployment, configureation, etc... and this is for the lack of time. You are more than welcome to design and implement the solution as you see fit._
 
 ## Useful Interfaces
