@@ -19,7 +19,10 @@ http://[host]:[port]/api/v1/quotes?sources=<json,xml,image>&page=<number>&quotes
 ## Quotes sources
 * [json](https://dimkinv.github.io/node-workshop/json-source.json) `https://dimkinv.github.io/node-workshop/json-source.json`
 * [xml](https://dimkinv.github.io/node-workshop/xml-source.xml) `https://dimkinv.github.io/node-workshop/xml-source.xml`
-* [image](https://dimkinv.github.io/node-workshop/image-source.json) `https://dimkinv.github.io/node-workshop/image-source.json`
+* **BONUS** [image](https://dimkinv.github.io/node-workshop/image-source.json) `https://dimkinv.github.io/node-workshop/image-source.json`
+
+### BONUS Images source
+In the images source you are provided with [base64 encoded images](https://en.wikipedia.org/wiki/Base64) that you will be tasked to send to Google OCR service. Please look at the [Parsing images to text OCR](#Parsing images to text OCR) section to find out more
 
 ## Addition workshop info
 ### Recommended libraries
