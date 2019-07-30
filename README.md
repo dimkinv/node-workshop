@@ -10,7 +10,7 @@ This web server should pull quotes form different sources and provide a single a
 ### BONUS Images Source
 In the images source you are provided with [base64](https://en.wikipedia.org/wiki/Base64) encoded images that you will be tasked to send to Google OCR service. Please look at the [Parsing images to text OCR](#parsing-images-to-text-ocr) section to find out more
 
-## Implementation order
+### Implementation order
 In order to get the maximum from this workshop I suggest to follow spcific order in your implementation. This way in case you will not have enough time you will still be able to complete part of the required API.
 
 1. implement the server with a single endpoint that recieves the required parameters.
@@ -80,8 +80,8 @@ After placing package.json in the folder and running `npm i` you will be able to
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/app.ts",
-    "start:dev": "nodemon --ext ts --exec npm run start -w src/**/*.ts",
-    "start:debug": "nodemon -w src/**/*.ts --ext ts --exec \"node -r ts-node/register --inspect-brk src/app.ts\""
+    "start:dev": "nodemon -w src --ext ts --exec \"node -r ts-node/register src/app.ts\"",
+    "start:debug": "nodemon -w src --ext ts --exec \"node -r ts-node/register --inspect-brk src/app.ts\""
   },
   "keywords": [],
   "author": "",
@@ -111,7 +111,7 @@ Inside the `solution` folder you are provided with fully working solution of the
 
 **NEVER copy/paste! Instead look, understand, and then write the code with your own hands. There is no learning in ctrl+c/ctrl+v**
 
-**_Note_** _This solution is opinionated, it includes specific solution design. It is by no means the right one or the only one. It is also by design omits things like logging, deployment, configureation, etc... and this is for the lack of time. You are more than welcome to design and implement the solution as you see fit._
+**_Note_** _This solution is opinionated, it includes specific solution design. It is by no means the only one. It is also by design omits things like logging, deployment, configureation, etc... and this is for the lack of time. You are more than welcome to design and implement the solution as you see fit._
 
 ## Useful Interfaces
 To somplify work below are a couple of useful interfaces that you can use in your solution for typesafe development

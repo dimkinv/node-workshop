@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/app.ts",
-    "start:dev": "nodemon --ext ts --exec npm run start -w src/**/*.ts",
-    "start:debug": "nodemon -w src/**/*.ts --ext ts --exec \"node -r ts-node/register --inspect-brk src/app.ts\""
+    "start:dev": "nodemon -w src --ext ts --exec \"node -r ts-node/register src/app.ts\"",
+    "start:debug": "nodemon -w src --ext ts --exec \"node -r ts-node/register --inspect-brk src/app.ts\""
   },
   "keywords": [],
   "author": "",
