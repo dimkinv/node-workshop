@@ -109,7 +109,7 @@ _if you feel like you know nest.js, go ahead and write the solution with nest!_
 # Solution
 Inside the `solution` folder you are provided with fully working solution of the project. You are welcome to look inside to see and take parts of the code if you'd want. There is only one rule:
 
-**NEVER copy/paste! Instead look, understand, and then write the code with your own hands. There is no learning in ctrl+c/ctrl+v**
+**DON'T copy/paste! Instead look, understand, and then write the code with your own hands. There is no learning in ctrl+c/ctrl+v**
 
 **_Note_** _This solution is opinionated, it includes specific solution design. It is by no means the only one. It is also by design omits things like logging, deployment, configureation, etc... and this is for the lack of time. You are more than welcome to design and implement the solution as you see fit._
 
