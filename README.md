@@ -6,7 +6,7 @@
 
 ## Overview
 In this workshop you need to create a webserver using node.js technologies. 
-This web server should pull quotes form different sources and provide a single api endpoint with filtering avilities and should also support paging.
+This web server should pull quotes form different sources and provide a single api endpoint with filtering by source abilities and should also support paging.
 
 3 sources are available
 * json source
@@ -21,7 +21,7 @@ In order to get the maximum from this workshop I suggest to follow spcific order
 
 1. implement the server with a single endpoint that recieves the required parameters.
 1. implement only the json and xml sources requests (leave images till the end).
-1. implement pagination mechangincs to support paging requests.
+1. implement pagination mechanics to support pagination.
 1. finally, implement images source with Google OCR parsing.
 
 ## API specification
