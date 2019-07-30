@@ -99,3 +99,41 @@ _if you feel like you know nest.js, go ahead and write the solution with nest!_
 Inside the `solution` folder you are provided with fully working solution of the project. You are welcome to look inside to see and take parts of the code if you'd want. There is only one rule:
 
 **NEVER copy/paste! Instead look, understand, and then write the code with your own hands. There is no learning in ctrl+c/ctrl+v**
+
+**_Note_** _This solution is opinionated, it includes specific solution design. It is by no means the right one or the only one. It is also by design omits things like logging, deployment, configureation, etc... and this is for the lack of time. You are more than welcome to design and implement the solution as you see fit._
+
+## Useful Interfaces
+To somplify work below are a couple of useful interfaces that you can use in your solution for typesafe development
+
+## OCRRequest - one instance for every image to scan
+```
+interface OCRREsponseWrapper {
+    requests: OCRRequest[]
+}
+```
+
+## OCRRequestWrapper - wrapping for OCRRequests
+```
+interface OCRRequest {
+    image: {
+        content: string
+    },
+    features: [
+        {
+            type: string
+        }
+    ]
+}
+```
+
+## OCRResponse - response that will be received from OCR service
+```
+interface OCRREsponse {
+    responses: {
+        textAnnotations: {
+            locale: string;
+            description: string;
+        }[]
+    }[]
+}
+```
