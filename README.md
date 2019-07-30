@@ -105,14 +105,7 @@ Inside the `solution` folder you are provided with fully working solution of the
 ## Useful Interfaces
 To somplify work below are a couple of useful interfaces that you can use in your solution for typesafe development
 
-## OCRRequest - one instance for every image to scan
-```
-interface OCRREsponseWrapper {
-    requests: OCRRequest[]
-}
-```
-
-## OCRRequestWrapper - wrapping for OCRRequests
+### OCRRequest - one instance for every image to scan
 ```
 interface OCRRequest {
     image: {
@@ -126,7 +119,14 @@ interface OCRRequest {
 }
 ```
 
-## OCRResponse - response that will be received from OCR service
+### OCRRequestWrapper - wrapping for OCRRequests
+```
+interface OCRREsponseWrapper {
+    requests: OCRRequest[]
+}
+```
+
+### OCRResponse - response that will be received from OCR service
 ```
 interface OCRREsponse {
     responses: {
