@@ -10,6 +10,14 @@ This web server should pull quotes form different sources and provide a single a
 ### BONUS Images Source
 In the images source you are provided with [base64](https://en.wikipedia.org/wiki/Base64) encoded images that you will be tasked to send to Google OCR service. Please look at the [Parsing images to text OCR](#parsing-images-to-text-ocr) section to find out more
 
+## Implementation order
+In order to get the maximum from this workshop I suggest to follow spcific order in your implementation. This way in case you will not have enough time you will still be able to complete part of the required API.
+
+1. implement the server with a single endpoint that recieves the required parameters.
+1. implement only the json and xml sources requests (leave images till the end).
+1. implement pagination mechangincs to support paging requests.
+1. finally, implement images source with Google OCR parsing.
+
 ## API specification
 Api endpoint should of the following specs:
 ```
