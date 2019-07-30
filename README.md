@@ -113,7 +113,8 @@ Inside the `solution` folder you are provided with fully working solution of the
 
 You can can find the repository with this file and the solution [here](https://github.com/dimkinv/node-workshop)
 
-To clone the project please run the following command in your teminal of choice: `git clone https://github.com/dimkinv/node-workshop.git`
+To clone the project please run the following command in your teminal of choice: 
+```git clone https://github.com/dimkinv/node-workshop.git```
 
 **_Note_** _This solution is opinionated, it includes specific solution design. It is by no means the only one. It is also by design omits things like logging, deployment, configureation, etc... and this is for the lack of time. You are more than welcome to design and implement the solution as you see fit._
 
@@ -150,5 +151,14 @@ interface OCRREsponse {
             description: string;
         }[]
     }[]
+}
+```
+
+### XMLSourceResponse - response that will be returned form xml2js parser
+```
+interface XMLSourceResponse {
+    root: {
+        quote: { content: string[] }[]
+    }
 }
 ```
