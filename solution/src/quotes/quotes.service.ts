@@ -2,7 +2,7 @@ import { handlersStrategies } from "../sources-handlers/handlers.strategy";
 import { Quote } from "../models/quote.model";
 
 export class QuotesService {
-    async getQuotesBySource(sources: string[]): Promise<[Error | null, Quote[] | null]> {
+    async getQuotesBySource(sources: string[], page: number, quotesPerPage: number): Promise<[Error | null, Quote[] | null]> {
         const handlerRequests: Promise<[Error | null, Quote[] | null]>[] = [];
 
         sources.forEach(source => {
@@ -22,6 +22,9 @@ export class QuotesService {
             return [...acc, ...quotes];
         }, []);
 
-        return [null, allQuotes];
+        const startIndex = page * quotesPerPage;
+        const endIndex = startIndex + quotesPerPage;
+
+        return [null, allQuotes.slice(startIndex, endIndex)];
     }
 }

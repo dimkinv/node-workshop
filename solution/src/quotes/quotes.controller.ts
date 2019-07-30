@@ -1,8 +1,5 @@
 import { Request, Response } from "express";
 import { QuotesService } from './quotes.service';
-import { JSONHandler } from "../sources-handlers/json.handler";
-import { XMLHandler } from "../sources-handlers/xml.handler";
-import { ImageHandler } from "../sources-handlers/image.handler";
 
 class QuotesController {
     private quotesService = new QuotesService();
@@ -12,20 +9,33 @@ class QuotesController {
     }
 
     async getAll(request: Request, response: Response) {
-        if(!request.query.sources){
-            response.status(400).send('no "sources" query parameter was provided');
+        const page = +request.query.page;
+        const quotesPerPage = +request.query.quotesPerPage;
+        
+        if(!this.isInputValid(request.query.sources, page, quotesPerPage)){
+            response.status(400).send('one of the query parameters was not provided or was provided incorrectly');
             return;
         }
 
         const sources = request.query.sources.split(',');
 
-        const [err, quotes] = await this.quotesService.getQuotesBySource(sources);
-        if(err){
+
+        const [err, quotes] = await this.quotesService.getQuotesBySource(sources, page, quotesPerPage);
+        if (err) {
             response.status(500).send(err.message);
             return;
 
         }
         response.json(quotes);
+    }
+
+    private isInputValid(sources: string[], page: number, quotesPerPage: number) {
+        
+        if (!sources || isNaN(page) || isNaN(quotesPerPage)){
+            return false;
+        }
+
+        return true;
     }
 }
 
