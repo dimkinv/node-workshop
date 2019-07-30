@@ -1,8 +1,8 @@
 # Node.js Workshop
 
 #### First thing first
-_* Presentations from today can be found [here](https://al942u.github.io/node-js/)_
-_* You can can find the repository with this file and the solution [here](https://github.com/dimkinv/node-workshop) (more on that later)_
+* _Presentations from today can be found [here](https://al942u.github.io/node-js/)_
+* _You can can find the repository with this file and the solution [here](https://github.com/dimkinv/node-workshop) (more on that later)_
 
 ## Overview
 In this workshop you need to create a webserver using node.js technologies. 
