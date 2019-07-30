@@ -5,7 +5,10 @@ This web server should pull quotes form different sources and provide a single a
 3 sources are available
 * json source
 * xml source
-* images source _(image source is effectively a json source but with base64 encoded images instead of text)_
+* **BONUS** images source _(image source is effectively a json source but with base64 encoded images instead of text)_
+
+### BONUS Images Source
+In the images source you are provided with [base64](https://en.wikipedia.org/wiki/Base64) encoded images that you will be tasked to send to Google OCR service. Please look at the [Parsing images to text OCR](#parsing-images-to-text-ocr) section to find out more
 
 ## API specification
 Api endpoint should of the following specs:
@@ -19,10 +22,7 @@ http://[host]:[port]/api/v1/quotes?sources=<json,xml,image>&page=<number>&quotes
 ## Quotes sources
 * [json](https://dimkinv.github.io/node-workshop/json-source.json) `https://dimkinv.github.io/node-workshop/json-source.json`
 * [xml](https://dimkinv.github.io/node-workshop/xml-source.xml) `https://dimkinv.github.io/node-workshop/xml-source.xml`
-* **BONUS** [image](https://dimkinv.github.io/node-workshop/image-source.json) `https://dimkinv.github.io/node-workshop/image-source.json`
-
-### BONUS Images source
-In the images source you are provided with [base64 encoded images](https://en.wikipedia.org/wiki/Base64) that you will be tasked to send to Google OCR service. Please look at the [Parsing images to text OCR](#Parsing images to text OCR) section to find out more
+* [image](https://dimkinv.github.io/node-workshop/image-source.json) `https://dimkinv.github.io/node-workshop/image-source.json`
 
 ## Addition workshop info
 ### Recommended libraries
