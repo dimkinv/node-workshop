@@ -1,5 +1,10 @@
 # Node.js Workshop
-_Presentations from today can be found [here](https://al942u.github.io/node-js/)_
+
+#### First thing first
+_* Presentations from today can be found [here](https://al942u.github.io/node-js/)_
+
+_* You can can find the repository with this file and the solution [here](https://github.com/dimkinv/node-workshop) (more on that later)_
+
 
 In this workshop you need to create a webserver using node.js technologies. 
 This web server should pull quotes form different sources and provide a single api endpoint with filtering avilities and should also support paging.
@@ -112,8 +117,6 @@ _if you feel like you know nest.js, go ahead and write the solution with nest!_
 Inside the `solution` folder you are provided with fully working solution of the project. You are welcome to look inside to see and take parts of the code if you'd want. There is only one rule:
 
 **DON'T copy/paste! Instead look, understand, and then write the code with your own hands. There is no learning in ctrl+c/ctrl+v**
-
-You can can find the repository with this file and the solution [here](https://github.com/dimkinv/node-workshop)
 
 To clone the project please run the following command in your teminal of choice: 
 ```
