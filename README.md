@@ -8,6 +8,14 @@
 In this workshop you need to create a webserver using node.js technologies. 
 This web server should pull quotes form different sources and provide a single api endpoint with filtering avilities and should also support paging.
 
+#### Example One
+Assuming we have 100 json quotes, the url `http://localhost:3000/api/v1/quotes?sources=json&page=2&quotesPerPage=20` should return 20 json quotes with the starting index **40** and up to **59**
+
+This means that the url should be parsed and data should be pulled **only** from the `json` source and the sliced.
+
+#### Example Two 
+Assuming we have totaly 100 quotes from all sources the url `http://localhost:3000/api/v1/quotes?sources=json,image,xml&page=2&quotesPerPage=20` should pull quotes from all the source **in parallel** and then slice it as before
+
 3 sources are available
 * json source
 * xml source
